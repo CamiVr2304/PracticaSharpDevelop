@@ -44,6 +44,7 @@ namespace Calculadora
             btnMultiplicar.Click += Operacion_Click;
             btnDividir.Click += Operacion_Click;
             btnModulo.Click += Operacion_Click;
+            btnPotencia.Click += Operacion_Click;
 
             // Resultado y limpieza
             btnIgual.Click += Igual_Click;
@@ -137,7 +138,10 @@ namespace Calculadora
     		}
     			resultado = primerNumero % segundoNumero;
     				break;
-
+    				
+					case "^":
+    				resultado = Math.Pow(primerNumero, segundoNumero);
+    				break;
                 default:
                     MessageBox.Show(
                         "Revisa el texto del boton de operacion.");
