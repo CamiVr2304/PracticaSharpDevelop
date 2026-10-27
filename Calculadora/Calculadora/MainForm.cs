@@ -43,6 +43,7 @@ namespace Calculadora
             btnResta.Click += Operacion_Click;
             btnMultiplicar.Click += Operacion_Click;
             btnDividir.Click += Operacion_Click;
+            btnModulo.Click += Operacion_Click;
 
             // Resultado y limpieza
             btnIgual.Click += Igual_Click;
@@ -127,6 +128,15 @@ namespace Calculadora
 
                     resultado = primerNumero / segundoNumero;
                     break;
+                    
+                  case "%":
+    				if (segundoNumero == 0)
+    				{
+        			MessageBox.Show("No se puede calcular modulo entre cero.");
+        				return;
+    		}
+    			resultado = primerNumero % segundoNumero;
+    				break;
 
                 default:
                     MessageBox.Show(

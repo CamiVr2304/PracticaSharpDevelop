@@ -33,6 +33,7 @@ namespace Calculadora
 		private System.Windows.Forms.Button btn000;
 		private System.Windows.Forms.Button btnPunto;
 		private System.Windows.Forms.Button btnC;
+		private System.Windows.Forms.Button btnModulo;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -78,6 +79,7 @@ namespace Calculadora
 			this.btn000 = new System.Windows.Forms.Button();
 			this.btnPunto = new System.Windows.Forms.Button();
 			this.btnC = new System.Windows.Forms.Button();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// txtDisplay
@@ -253,11 +255,22 @@ namespace Calculadora
 			this.btnC.Text = "C";
 			this.btnC.UseVisualStyleBackColor = true;
 			// 
+			// btnModulo
+			// 
+			this.btnModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnModulo.Location = new System.Drawing.Point(31, 307);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(252, 32);
+			this.btnModulo.TabIndex = 20;
+			this.btnModulo.Text = "%";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(330, 316);
+			this.ClientSize = new System.Drawing.Size(329, 420);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.btnC);
 			this.Controls.Add(this.btnPunto);
 			this.Controls.Add(this.btn000);
